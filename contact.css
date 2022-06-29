@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+
+.header-content{
+    display:flex;
+   
+    
+ }
+ .header-home{
+    background: url('https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg?q=50&fit=contain&w=1500&h=750&dpr=1.5');
+
+    background-repeat: no-repeat;
+ }
+ .header{
+    width:110px;
+    
+ }
+.header-content .header img{
+    width: 120px;
+    
+    
+ }
+ .header-content .list{
+    display: flex;
+    padding: 20px;
+    margin-left: 360px;
+    font-size: 30px;
+    text-decoration: none;
+    
+    
+}
+.list a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    cursor: pointer;
+    
+}
+.list  li a:hover{
+    color:white ;
+    
+}
+.list .current{
+    border-bottom:solid orange;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+*{
+    margin: 0;
+}
+hr{
+    color: orange;
+    border: 2px solid orange;
+}
+.contact{
+    margin: 30px;
+    margin-left: 550px;
+}
+.contact hr{
+    margin-left: 40px;
+    margin-top: 5px;
+    width: 100px;
+    border: 1px solid orange;
+}
+.me{
+    margin-left:500px;
+    font-size: 25px;
+}

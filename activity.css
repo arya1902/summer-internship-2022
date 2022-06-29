@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+}
+
+.header-content{
+    display:flex;
+   
+    
+ }
+ .header-home{
+    background: url('https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg?q=50&fit=contain&w=1500&h=750&dpr=1.5');
+
+    background-repeat: no-repeat;
+ }
+ .header{
+    width:110px;
+    
+ }
+.header-content .header img{
+    width: 120px;
+    
+    
+ }
+ .header-content .list{
+    display: flex;
+    padding: 20px;
+    margin-left: 360px;
+    font-size: 30px;
+    text-decoration: none;
+    
+    
+}
+.list a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    cursor: pointer;
+    
+}
+.list  li a:hover{
+    color:white ;
+    
+}
+.list .current{
+    border-bottom:solid orange;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+*{
+    margin: 0;
+}
+hr{
+    color: orange;
+    border: 2px solid orange;
+}
+.work{
+    margin: 30px;
+    margin-left: 550px;
+}
+.work hr{
+    margin-left: 40px;
+    margin-top: 5px;
+    width: 100px;
+    border: 1px solid orange;
+}
+.work-p{
+    margin-left:500px;
+    font-size: 25px;
+}
+.images{
+    display: flex;
+    margin-top: 50px;
+    padding:10px;
+    margin-left: 60px;
+}
+    
+.img1{
+    position: relative;
+    transition: all 0.5s;
+    background-position: center;
+     background-size: cover;
+}
+.img1 img{
+   
+    width:400px; 
+    height:300px;
+    
+}
+
+.img2{
+    display: flex;
+    margin-left: 75px;
+    margin-top: 50px;
+    padding:10px;
+    
+    
+}
+.img3 img{
+    width:400px;
+    height:300px;
+}
+.img4{
+    display: flex;
+    margin-left: 75px;
+}
+.img5 img{
+    width:400px;
+    height:300px;
+}
+.img1:hover{
+    transform: scale(1.1);
+   
+}
+.img1::before{
+    content: ' ';
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: rgb(232, 170, 55);
+    z-index: 1;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.img1:hover::before{
+    opacity: 0.8;
+}
+/*.img3:hover{
+    transform: scale(1.1);
+   
+}
+.img3::before{
+    content: ' ';
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: rgb(232, 170, 55);
+    z-index: 1;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.img3:hover::before{
+    opacity: 0.8;
+}
+.img5:hover{
+    transform: scale(1.1);
+   
+}
+.img5::before{
+    content: ' ';
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: rgb(232, 170, 55);
+    z-index: 1;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.img5:hover::before{
+    opacity: 0.8;
+}*/
+.footer{
+    background-color: #494848;
+    margin-top: 60px;
+   
+}
+.footer-1{
+   display: flex;
+}
+.footer .footer-1 .location{
+   margin-left: 40px;
+   padding:20px;
+   margin-top:30px;
+   color: white;
+   
+}
+
+.footer .footer-1 .location h3{
+   margin-bottom: 20px;
+   
+   margin-left: 20px;
+}
+.footer  .footer-1 .location h3 i{
+   padding: 10px;
+   width: 20px;
+   height: 20px;
+   background-color: gray;
+   list-style: none;
+   border-radius: 50%;
+}
+
+.footer  .footer-1 .company{
+   padding:20px;
+   margin-top: 30px;
+   color: white;
+}
+.footer  .footer-1 .company h2{
+   margin-left: 150px;
+   margin-bottom: 20px;
+   color: orange;
+}
+.footer  .footer-1 .company p{
+  width: 250px;
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+.footer  .footer-1 .navigate li{
+  margin-left: 100px;
+  
+  margin-top: 40px;
+  justify-content: center;
+  
+}
+.footer  .footer-1 .navigate li a{
+   color: white;
+   text-decoration: none;
+   padding: 5px;
+   display: flex;
+   font-size: 25px;   
+}
+.footer  .footer-1 .navigate li h2{
+   color: orange;
+   margin-bottom: 10px;
+
+}
+.footer .footer-1 .navigate li a:hover{
+   color: red;
+}
+
+.footer .footer-icon{
+   margin-left: 550px;
+  
+   
+}
+.footer .footer-icon i{
+   width: 30px;
+   height: 30px;
+   background-color: gray;
+   list-style: none;
+   border-radius: 50%;
+   padding: 10px;
+   color: white;
+   
+}
+.footer .footer-p p{
+   color: white;
+   margin-left: 550px;
+   margin-top: 150px;
+}
