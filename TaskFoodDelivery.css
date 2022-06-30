@@ -1,0 +1,50 @@
+
+
+.circle{
+    
+    display: flex;
+    justify-content:space-around;
+    margin-top: 150px;
+    position: relative;
+    
+}
+.c-1 h3{
+    
+    width:30px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: #dadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.c-1 h3::before{
+    content: '';
+    position:absolute;
+    top:60%;
+    margin-left: 330px;
+    background:#dadada;
+    transform: translateY(-50%);
+    height: 5px;
+    width: 320px;  
+    
+}
+.c-1 img{
+    width:100px;
+    height: 100px;
+}
+.c-1 button{
+    border: 2px solid black;
+    background-color:lightgray;
+    color: black;
+    width:110px;
+    height: 30px;
+}
+.c-1 button:hover{
+    transform: scale(1.1);
+    background-color: #545b62;
+    color: white;
+    
+}
