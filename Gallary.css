@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+}
+
+.header-content{
+    display:flex;
+   
+    
+ }
+ .header-home{
+    background: url('https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg?q=50&fit=contain&w=1500&h=750&dpr=1.5');
+
+    background-repeat: no-repeat;
+ }
+ .header{
+    width:110px;
+    
+ }
+.header-content .header img{
+    width: 120px;
+    
+    
+ }
+ .header-content .list{
+    display: flex;
+    padding: 20px;
+    margin-left: 360px;
+    font-size: 30px;
+    text-decoration: none;
+    
+    
+}
+.list a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    cursor: pointer;
+    
+}
+.list  li a:hover{
+    color:white ;
+    
+}
+.list .current{
+    border-bottom:solid orange;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+*{
+    margin: 0;
+}
+hr{
+    color: orange;
+    border: 2px solid orange;
+}
+.blog1{
+    background-color: gray;
+    height: 400px;
+    color:white;
+    
+}
+.post{
+    display: flex;
+    margin:20px;
+    padding:10px;
+}
+.blog1 img{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+
+}
+.name{
+    display: flex;
+    margin-left: 40px;
+}
+.line{
+    border: 1px solid white;
+    margin-left: 5px;
+    margin-right:5px ;
+    
+}
+#month{
+    margin-right: 5px;
+    
+}
+#date{
+    margin-right: 5px;
+}
+#year{
+    margin-right: 5px;
+}
+.content{
+    margin-top: 20px;
+    width:1300px;
+    margin-left: 35px;
+    font-size: 20px;
+}
+.show-1{
+    display: inline;
+}
+.hide-1 {
+    display: none;
+}
+button{
+    width:100px;
+    height:40px;
+    background: white;
+    color: black;
+
+}
