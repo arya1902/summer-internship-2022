@@ -70,106 +70,78 @@ hr{
     margin-left:500px;
     font-size: 25px;
 }
-.images{
-    display: flex;
-    margin-top: 50px;
-    padding:10px;
-    margin-left: 60px;
+.items {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
-    
-.img1{
+.item{
     position: relative;
-    transition: all 0.5s;
-    background-position: center;
-     background-size: cover;
-}
-.img1 img{
-   
-    width:400px; 
-    height:300px;
+    overflow: hidden;
     
+}
+.item-img{
+    width:500px;
+    height:300px;
+    background-size: cover;
+    display: block;
 }
 
-.img2{
-    display: flex;
-    margin-left: 75px;
-    margin-top: 50px;
-    padding:10px;
+.item-img  img{
+    object-fit:cover ;
+    height: inherit;
+    width: inherit;
+}
+.item-text{
+    position:absolute;
+    top:0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    opacity: 0;
+    z-index:1;
+    transform: opacity ease-in-out;
+    transition: 400ms;
+
+}
+.item:hover .item-text{
+    opacity:0.6;
+    background:gold;
+    overflow: hidden;
+   
+}
+.item:hover .item-img{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+.item::after{
+    content: " ";
+    position: absolute;
+    display: block;
+    opacity: 0.8;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+    transition:all 3s ;
+
+}
+
+
+
+
+ 
     
+
     
-}
-.img3 img{
-    width:400px;
-    height:300px;
-}
-.img4{
-    display: flex;
-    margin-left: 75px;
-}
-.img5 img{
-    width:400px;
-    height:300px;
-}
-.img1:hover{
-    transform: scale(1.1);
-   
-}
-.img1::before{
-    content: ' ';
-    position: absolute;
-    top:0;
-    left:0;
-    display: block;
-    width:100%;
-    height: 100%;
-    background: rgb(232, 170, 55);
-    z-index: 1;
-    transition: 0.5s all;
-    opacity: 0;
-}
-.img1:hover::before{
-    opacity: 0.8;
-}
-/*.img3:hover{
-    transform: scale(1.1);
-   
-}
-.img3::before{
-    content: ' ';
-    position: absolute;
-    top:0;
-    left:0;
-    display: block;
-    width:100%;
-    height: 100%;
-    background: rgb(232, 170, 55);
-    z-index: 1;
-    transition: 0.5s all;
-    opacity: 0;
-}
-.img3:hover::before{
-    opacity: 0.8;
-}
-.img5:hover{
-    transform: scale(1.1);
-   
-}
-.img5::before{
-    content: ' ';
-    position: absolute;
-    top:0;
-    left:0;
-    display: block;
-    width:100%;
-    height: 100%;
-    background: rgb(232, 170, 55);
-    z-index: 1;
-    transition: 0.5s all;
-    opacity: 0;
-}
-.img5:hover::before{
-    opacity: 0.8;
-}*/
+
+
+
+
+
+
+
 .footer{
     background-color: #494848;
     margin-top: 60px;
