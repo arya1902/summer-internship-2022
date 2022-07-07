@@ -71,41 +71,54 @@ hr{
     font-size: 25px;
 }
 .form{
-    display: flex;
-    margin-top: 30px;
-    justify-content: space-around;
-    margin-right: 400px;
-    margin-left: 350px;
-    
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+   justify-content: space-around;
+   margin-left: 150px;
+   
+     
 }
 .name{
-    padding: 40px;
+    position: relative;
+    margin: 4rem;
+    font-size:20px;
+}
+
+.name input{
+    border: none;
+    width: 300px;
+    margin-top: 10px;
+    border-bottom: 2px solid black;
     
 }
 
-.name hr{
-    margin-left: 1px;
-    width: 400px;
-    border: 1px solid black;
-}
-.form1{
-    display: flex;
-    justify-content:space-around;
-    margin-right: 400px;
-    margin-left: 350px;
-}
-.email{
-    padding: 40px;
 
+ label{
+    position:absolute;
+    top:1px;
+    left:0;
 }
-.email hr{
+ 
+input:focus{
+    outline: 0;
     
-    margin-left: 1px;
-    width: 400px;
-    border: 1px solid black;
 }
+input:focus + label span{
+    color:#333;
+    transform: translateY(-20px);
+}
+label span{
+    transition: 0.9s ease;
+}
+span{
+    min-width: 5px;
+    display: inline-block;
+}
+
+
 .text textarea{
     margin-left: 200px;
+    margin-top: 50px;
     width: 900px;
     height: 100px;
     border: 2px solid black;
@@ -118,6 +131,8 @@ hr{
     height: 40px;
     background-color: #484949;
     color: white;
+    border:none;
+    border-radius: 6px;
     
     
 

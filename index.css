@@ -36,12 +36,14 @@
     
 }
 .list  li a:hover{
-    color:white ;
+    color:white;
+    
     
 }
 .list .current{
     border-bottom:solid orange;
     padding: 0;
+    
 }
 li{
     list-style: none;
@@ -65,11 +67,18 @@ li{
     color:yellow;
 }
 .btn{
-    margin-left: 520px;
-    padding: 10px;
-    margin-top: 3px;
-    font-size: 15px;
+  margin-left: 520px;
+  margin-top: 10px;
+  color: black;
+  background-color: whitesmoke;
+  text-decoration: none;
+    width: 120px;
+    height: 40px;
+    border: none;
 }
+
+
+    
 .btn:hover{
     border: 1px solid orange;
     background-color: orange;
