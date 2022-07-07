@@ -141,15 +141,15 @@ hr{
     z-index:1;
     color: #fff;
     transform: translateX(-20%);
-    transition: opacity 500ms;
+    /* transition: opacity 500ms; */
     transition-delay: 300ms;
 
 }
 .item-wrap{
-    position: absolute;
+     position: absolute; 
     width: 100%;
     top: 50%;
-    transform: translateY(-50%);
+     transform: translateY(-50%); 
 }
 .p{
     font-size: 20px;
