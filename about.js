@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded" ,() =>{
             } 
         },step);
     }
-    counter("twitter",0,1587,3000);
+    counter("twitter",0,4000,3000);
     counter("utube",100,3900,2500);
     counter("facebook",0,3400,3000);
 
