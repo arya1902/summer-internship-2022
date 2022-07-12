@@ -23,38 +23,50 @@
             </div>
         </div>
      </header><hr>
-     <div class="contact">
-        <h1>CONTACT ME</h1><hr>
-    </div>
-  <p class="me">Here is how you can reach me</p>
-  <div class="form">
-
-    <div class="name">
-       <label>Name</label>
-         <input type="text" class="input">
-    </div>
 
 
-      <div class="name">
-        <label>Subject</label>
-     <input type="text" class="input">
-    </div>
- 
-  
-    <div class="name">
-        <label>Email</label>
-       <input type="text" class="input"> 
-      </div>
+  <form class="form-control">
+    <div class="text-feilds">
+        <div class="labels">
+            
+            <input type="text"  pattern="[a-zA-Z].{2,}"
+            title="Must be alphbets only,minimum 3 " required>
+        <label>Name</label>
 
-    <div class="name">
-      <label>Phone No</label>
-       <input type="text" class="input">
-      </div>
+        </div>
+        <div class="labels">
+            
+            <input type="text"  required>
+            <label>Subject</label>
+
+            
+
+        </div>
+     </div>
+    <div class="text-feilds">
+        <div class="labels">
+            <input type="email" 
+                    title="Email format must be ___@___.__"
+                    required>
+                    
+                <label>Email</label>
+        </div>
+        <div class="labels">
+            <input type="text" class="text-input phone-input" 
+                    title="Exactly 10 digits  " required>
+                   
+                <label>Phone No</label>
+        </div>
     </div>
-  <div class="text">
-    <textarea placeholder="Enter Message"></textarea>
-  </div>
-  <button class="btn">Submit</button>
+    <div class="text-feilds">
+    <div class="labels">
+    <textarea rows="4" placeholder="Enter Message"></textarea>
+</div>
+</div>
+    </div>
+    <button type="submit" text="submit">Submit</button>
+</form>
+
 
   <div class="content">
     <div class="address">
@@ -99,7 +111,7 @@
                 <a href="index.html" class="current">Home</a>
                 <a href="About.html">About</a>
                 <a href="Activity.html">Activity</a>
-                <a href="Gallary.html">Gallary</a>
+                <a href="Gallary.html">Blog</a>
                 <a href="Contact.html">Contact</a>
             </li>
           </div>

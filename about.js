@@ -28,3 +28,25 @@ react.style.width = react.getAttribute('data-target');
 
     }
 }
+
+document.addEventListener("DOMContentLoaded" ,() =>{
+    function counter(id,start , end , duration){
+        let obj = document.getElementById(id),
+        current = start,
+        range = end - start,
+        increment = end > start ? 1 : -1,
+        step = Math.abs(Math.floor(duration/range)),
+        timer = setInterval(()=>{
+            current += increment;
+            obj.textContent = current;
+            if(current == end){
+                clearInterval(timer);
+            } 
+        },step);
+    }
+    counter("twitter",0,1587,3000);
+    counter("utube",100,3900,2500);
+    counter("facebook",0,3400,3000);
+
+
+})

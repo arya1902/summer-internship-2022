@@ -70,62 +70,60 @@ hr{
     margin-left:500px;
     font-size: 25px;
 }
-.form{
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
-   justify-content: space-around;
-   margin-left: 150px;
-   
-     
-}
-.name{
-    position: relative;
-    margin: 4rem;
-    font-size:20px;
-}
 
-.name input{
-    border: none;
+.content{
+    display: flex;
+    background: #484949;
+    margin-top: 60px;
+    
+} 
+.form-control{
+    margin-top: 100px;
+}
+.container{
+    margin-left: 90px;
+}
+/* .form-control{
+    text-align: center;
+    margin-left: 350px;
+} */
+.text-feilds{
+    display: flex;
+    margin-left: 100px;
+    }
+ .labels{
     width: 300px;
+    margin: 20px 0 40px;
+  position: relative;  
+  margin-left: 10%;
+  /* bottom: 10px; */
+} 
+  .labels input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    display: block;
+    outline: none;
+    width: 100%;
+ }
+   .labels label{
+    position: absolute;
+    top: 1px;
+     left: 0;
+        }
+
+  textarea{
+    width: 240%;
+    border: 1px solid black;
+    outline: none;
+     margin-left: 15px;
     margin-top: 10px;
-    border-bottom: 2px solid black;
-    
-}
+} 
 
 
- label{
-    position:absolute;
-    top:1px;
-    left:0;
-}
- 
-input:focus{
-    outline: 0;
-    
-}
-input:focus + label span{
-    color:#333;
-    transform: translateY(-20px);
-}
-label span{
-    transition: 0.9s ease;
-}
-span{
-    min-width: 5px;
-    display: inline-block;
-}
+button{
 
-
-.text textarea{
-    margin-left: 200px;
-    margin-top: 50px;
-    width: 900px;
-    height: 100px;
-    border: 2px solid black;
-    
-}
-.btn{
-    margin-left: 480px;
+    margin-left: 430px;
     margin-top: 50px;
     width: 300px;
     height: 40px;
@@ -135,21 +133,38 @@ span{
     border-radius: 6px;
     
     
-
-    
 }
-.btn:hover{
+button:hover{
     background-color: orange;
     transition: 1s;
     
 
 }
-.content{
-    display: flex;
-    background: #484949;
-    margin-top: 60px;
-    
+ 
+
+
+.labels input:focus,
+.labels input:valid {
+  outline: 0;
+  border-bottom: #222 1.5px solid;
 }
+
+
+
+.labels label span {
+  display: inline-block;
+  font-size: 16px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.labels input:focus + label span,
+.labels input:valid + label span{
+    transform: translateY(-30px);
+}
+
+
+
 .address{
     color: white;
     font-family:cursive;
