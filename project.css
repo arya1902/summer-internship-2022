@@ -75,6 +75,7 @@ div{
     line-height: 3rem;
     font-size: x-large;
     padding-top: 10px;
+   
 }
 i{
     margin-left: 30px;
@@ -84,6 +85,7 @@ i{
     grid-template-columns: repeat(3, 1fr);
     background: #575757;
     padding-left: 10px;
+    
 }
 .pre{
     overflow-y: scroll;
